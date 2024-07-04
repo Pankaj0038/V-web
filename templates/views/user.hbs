@@ -1,0 +1,61 @@
+<!--user.hbs-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserCreds</title>
+    <link rel="stylesheet" href="./css/user.css">
+</head>
+<body>
+<script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const mytext = document.querySelector('h1');
+            let interval;
+
+            mytext.addEventListener('mouseenter', function() {
+                clearInterval(interval); // Clear any existing interval
+
+                // Reset text to original value
+                mytext.innerText = mytext.dataset.value;
+
+                let iteration = 0;
+                interval = setInterval(() => {
+                    mytext.innerText = mytext.innerText.split("")
+                        .map((letter, index) => {
+                            if (index < iteration) {
+                                return mytext.dataset.value[index];
+                            }
+                            return letters[Math.floor(Math.random() * 26)];
+                        })
+                        .join("");
+                    if (iteration >= mytext.dataset.value.length) {
+                        clearInterval(interval);
+                    }
+                    iteration += 1 / 3;
+                }, 30);
+            });
+                });
+
+    </script>
+
+
+    <div class="container">
+        <nav>
+            <h1 data-value="Gumn4m1">Gumn4m1</h1>
+            <img  class="profile"  src="./images/prf.png">
+        </nav>
+        <main>
+        <h2 id="title">Hello {{uname.username}},</h2>
+        <p class="inform">Welcome to your home page.</p>
+        User Details: <br>
+        Username: {{uname.username}},
+        Password: {{uname.password}},
+        User ID: {{uname.uid}},
+        </main>
+    </div>
+
+     
+</body>
+</html>
