@@ -1,0 +1,31 @@
+{
+  "name": "idor",
+  "version": "1.0.0",
+  "description": "IDOR vulnerable website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js -e js,hbs"
+  },
+  "author": "Gumn4m1",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.3",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.4.4",
+    "mongoose-unique-validator": "^5.0.1",
+    "swagger": "^0.7.5",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pankaj0038/V-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pankaj0038/V-web/issues"
+  },
+  "homepage": "https://github.com/Pankaj0038/V-web#readme"
+}
