@@ -1,0 +1,19 @@
+{
+  "name": "idor",
+  "version": "1.0.0",
+  "description": "IDOR vulnerable website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js -e js,hbs"
+  },
+  "author": "Gumn4m1",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.3",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.4.4",
+    "uuid": "^10.0.0"
+  }
+}
