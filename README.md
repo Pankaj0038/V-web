@@ -1,4 +1,4 @@
-<h1 align-item="center">V-web</h1> 
+<h1 align="center">V-web</h1> 
 <b>Vulnerable Web application</b> <br>
 V-web is collection of vulnerable web applications. In this collection I'm adding website with some infamous vulnerabilities like <b>IDOR</b> (Type of <i>Broken Access Control</i> vulnerability, which is currently rank top in the OWASP top 10 list).
 
