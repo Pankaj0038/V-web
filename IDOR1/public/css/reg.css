@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 37vh;
+    height: 37vh;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    border-radius: 60vh;
+}
+
+.logo {
+    width: 175px;
+    margin-bottom: 20px;
+}
+
+.login-container form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.login-container form button {
+    width: 86%;
+    padding: 10px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.separator {
+    margin: 10px 20px;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+.bgim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vh;
+    background-image: url("../images/contbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
