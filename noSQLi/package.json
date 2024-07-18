@@ -1,0 +1,17 @@
+{
+  "name": "nosqli",
+  "version": "1.0.0",
+  "description": "NoSQL vulnerable web application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js -e js,hbs"
+  },
+  "author": "Gumn4m1",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "mongodb": "^6.8.0",
+    "node-popup": "^0.1.14"
+  }
+}

@@ -1,0 +1,94 @@
+body{
+	display: grid;
+	min-height: 98vh;
+	grid-template-rows: auto 1fr auto;
+	background-color: #111;
+	color: white;
+}
+nav{
+	display: flex;
+}
+#server{
+	width: 6rem;
+	height: 6rem;
+}
+
+.navbar{
+	display: flex;
+	justify-content: right;
+	padding-right: 4rem;
+	align-items: center;
+	background-image: linear-gradient(to left,#222,#111);
+	width: 100%;
+}
+
+.navbar a{
+		color: white;
+		font-size: 2rem;
+}
+main{
+	display: grid;
+	grid-template-rows: 15% 30% 40% 10%;
+	grid-template-columns: 15% repeat(2,1fr) 20%;
+	grid-gap: 10px;
+}
+
+.bg{
+	grid-column: 1/-1;
+	border-radius: 2rem;
+	background-image: url("../img/banner.png");
+}
+.prof{
+	border-radius: 5rem;
+}
+.prof img{
+	height: 12rem;
+}
+.dat1{
+	font-size: 1.4rem;
+}
+.dat3{
+	grid-row: 2/4;
+	grid-column: 4/5; 
+}
+.dat4{
+	grid-column: 1/ 4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	padding: 2rem;
+}
+.dat5{
+	grid-column: 1/-1;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(to top,#111,#333);
+}
+.dat5 *{
+	display: flex;
+	flex-direction: column;
+	line-height: 1.4;
+}
+.dat5 h4{
+	margin: 0;
+	color: white;
+}
+.dat5 div{
+	color: grey;
+}
+main .bg,.prof,.dat1,.dat2,.dat3{
+	background-color: transparent;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+footer{
+	display: flex;
+	justify-content: center;
+}
