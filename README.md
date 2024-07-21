@@ -6,6 +6,7 @@ V-web is collection of vulnerable web applications. In this collection I'm addin
 - IDOR
   - IDOR in url
   - IDOR in API
+- NoSQL Injection
 
 ## Tech stacks
 As I made the project with this technologies, so you have to install this tech stacks before executing the server
