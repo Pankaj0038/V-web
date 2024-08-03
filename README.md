@@ -8,6 +8,7 @@ V-web is collection of vulnerable web applications. In this collection I'm addin
   - IDOR in API
 - NoSQL Injection
 - Insecure 2FA
+- XSS (Cross Site Scripting)
 
 ## Tech stacks
 As I made the project with this technologies, so you have to install this tech stacks before executing the server
@@ -40,7 +41,7 @@ As I made the project with this technologies, so you have to install this tech s
    ```bash
    npm init -y
    ```
-5. And now as I shared the package.json file so installing express will install all other requirements
+5. And now as I shared the package.json file so install the requirements
    ```bash
    npm i express
    ```
