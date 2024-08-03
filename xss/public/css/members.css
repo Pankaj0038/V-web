@@ -1,0 +1,173 @@
+body{
+	display: grid;
+	height: 98vh;
+	grid-template-rows: auto 1fr auto;
+	background-color: black;
+	font-family: 'Courier New', monospace;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	grid-row-gap: 0;
+	grid-column-gap: 1rem;
+}
+
+#h1t{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	grid-row: 1;
+	grid-column: 1 / span 2;
+}
+
+main *{
+	padding: 1.5px;
+}
+main h1{
+	color: #987;
+}
+main b{
+	color: #8c1;
+}
+main a{
+	color: #ddf;
+	text-decoration-line: none;
+}
+main p{
+	color: #fdd;
+}
+
+#tb{
+	color: #f55; 
+}
+.po{
+	color: #55f;
+}
+
+main button{
+	display: none;
+	margin-top:1px;
+	width: 20rem;
+	height:2rem;
+	align-items: center;
+	justify-content: center;
+}
+#names{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#names div{
+	display: grid;
+	grid-template-columns: 15rem 10rem 15rem;
+	align-items: center;
+	text-align: center;
+	border: 1px solid grey;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1.5rem;
+	color: white;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	height: 4rem;
+	align-items: center;
+	
+}
+nav a{
+	text-decoration-line: none;
+	color: white;
+	font-size: 1.5rem;
+}
+nav h1{
+	font-size: 2.5rem;
+}
+
+
+#mform{
+	display: none;
+	grid-column: 2;
+}
+
+ {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+} 

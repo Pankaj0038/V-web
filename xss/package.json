@@ -1,0 +1,16 @@
+{
+  "name": "xss",
+  "version": "1.0.0",
+  "description": "cross site scripting",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "gumn4m1",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.5.2"
+  }
+}
