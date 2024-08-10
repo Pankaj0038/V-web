@@ -1,0 +1,34 @@
+body{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 98vh;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 4rem;
+	background-color: red;
+}
+
+nav a{
+	color: white;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+main h1{
+	border: 1px solid grey;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
