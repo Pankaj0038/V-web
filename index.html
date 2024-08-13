@@ -3,6 +3,7 @@
 <head>
 	<title>V-web</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="./index.js"></script>
 </head>
 <body>
@@ -10,7 +11,7 @@
 		<h1 data-value="V-web">V-web</h1>
 		<p>Vulnerable web applciation</p>
 	</header>
-	<main>
+	<div class="flex-container">
 	    <div id="2fa" class="card" onclick="view('2fa')">
 	    	<div class="thumbnail">
 	    		<img src='./images/2fa.png'>
@@ -21,7 +22,7 @@
 	            <p>OTP is used for multilayer authentication or enhance security. But sometime due to insecure verification of otp, it can be bypass. In this example I have created a scenario where the otp verification can be bypass.</p>
 	        	<h3>Download and run</h3>
 	            <p>To download the website, click on the button!
-	            <a href="https://drive.usercontent.google.com/download?id=1F-Uf_Gr_ZsGw7pv3Ltm1xDpIMi4ZmT52">Download</a></p>
+	            <a href="https://drive.google.com/uc?export=download&id=1H0VyxsbZsETkcXl3sQ2A4xYsS48jSvVp">Download</a></p>
 	            <p>After downloading the website make sure to have node package maneger or npm installed in you device</p>
 	            <p>Then install the requirements (just installing express will download the rest requirement)</p>
 	            <fieldset>
@@ -34,7 +35,7 @@
 	            	<b id="run">npm run dev</b>
 	            	<button onclick="copy('run')"><i class="fa fa-clone"></i></button>
 	            </fieldset>
-	            <button onclick="hide('2fa');event.stopPropagation()">close</button>
+	            <button onclick="hide('2fa');event.stopPropagation()" class="close">close</button>
 	        </div>
 	    </div>
 	    <div class="card" id="idor" onclick="view('idor')">
@@ -44,8 +45,23 @@
 	    	</div>
 	        <div class="content">
 	            <h3>IDOR</h3>
-	            <button>Download</button>
-	            <p>How to run?</p>
+	            <p>Insecure Direct Object Reference is a web application vulnerability. It occurs when a web server uses user input directly to operate data from database</p>
+	            <h3>Download and run</h3>
+	            <p>To download the website, click on the button!
+	            <a href="https://drive.google.com/uc?export=download&id=1JkQWbG9ywBNKhtt09MpHrQfzbMIa9y_q">Download</a></p>
+	            <p>After downloading the website make sure to have node package maneger or npm installed in you device</p>
+	            <p>Then install the requirements (just installing express will download the rest requirement)</p>
+	            <fieldset>
+	            	<legend><h3>install</h3></legend>
+	            	<b id="inst2">npm install express</b>
+	            	<button onclick="copy('inst2')"><i class="fa fa-clone"></i></button>
+	            </fieldset>
+	            <fieldset>
+	            	<legend><h3>run</h3></legend>
+	            	<b id="run2">npm run dev</b>
+	            	<button onclick="copy('run2')"><i class="fa fa-clone"></i></button>
+	            </fieldset>
+	            <button onclick="hide('2fa');event.stopPropagation()" class="close">close</button>
 	        </div>
 	    </div>
 	    <div class="card" id="nosql" onclick="view('nosql')">
@@ -70,7 +86,7 @@
 	            <p>How to run?</p>
 	        </div>
 	    </div>
-	</main>
+	</div>
 	<footer>
 		<div class="issue">
 			<b>Report Issue</b>
