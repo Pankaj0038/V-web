@@ -18,7 +18,7 @@ header h1{
 	margin: 0;
 }
 
-main{
+.flex-container{
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	align-content: center;
@@ -57,7 +57,7 @@ main{
 	margin: 1rem;
 }
 
-.content button{
+.content .close{
 	height: 2rem;
 	width: 10rem;
 }
@@ -69,8 +69,8 @@ fieldset{
 	background-color: black;
 }
 
-fieldset i{
-	color: black;
+.fa{
+	background-color: transparent;
 }
 
 .content a{
