@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>V-web</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="./index.js"></script>
+</head>
+<body>
+	<header>
+		<h1 data-value="V-web">V-web</h1>
+		<p>Vulnerable web applciation</p>
+	</header>
+	<main>
+	    <div id="2fa" class="card" onclick="view('2fa')">
+	    	<div class="thumbnail">
+	    		<img src='./2fa.png'>
+	    		<b>2 Factor authentication bypass</b>
+	    	</div>
+	        <div class="content">
+	            <h3>OTP/2FA bypass</h3>
+	            <p>OTP is used for multilayer authentication or enhance security. But sometime due to insecure verification of otp, it can be bypass. In this example I have created a scenario where the otp verification can be bypass.</p>
+	        	<h3>Download and run</h3>
+	            <p>To download the website, click on the button!
+	            <a href="https://api.github.com/repos/Pankaj0038/V-web/contents/2fa?ref=main">Download</a></p>
+	            <p>After downloading the website make sure to have node package maneger or npm installed in you device</p>
+	            <p>Then install the requirements (just installing express will download the rest requirement)</p>
+	            <fieldset>
+	            	<legend><h3>install</h3></legend>
+	            	<b id="inst">npm install express</b>
+	            	<button onclick="copy('inst')"><i class="fa fa-clone"></i></button>
+	            </fieldset>
+	            <fieldset>
+	            	<legend><h3>run</h3></legend>
+	            	<b id="run">npm run dev</b>
+	            	<button onclick="copy('run')"><i class="fa fa-clone"></i></button>
+	            </fieldset>
+	            <button onclick="hide('2fa');event.stopPropagation()">close</button>
+	        </div>
+	    </div>
+	    <div class="card" id="idor" onclick="view('idor')">
+	    	<div class="thumbnail">
+	    		<img src="./idor.png">
+	    		<b>IDOR</b>
+	    	</div>
+	        <div class="content">
+	            <h3>IDOR</h3>
+	            <button>Download</button>
+	            <p>How to run?</p>
+	        </div>
+	    </div>
+	    <div class="card" id="nosql" onclick="view('nosql')">
+	    	<div class="thumbnail">
+	    		<img src="NoSQL.png">
+	    		<b>NoSQL injection</b>
+	    	</div>
+	        <div class="content">
+	            <h3>NoSQL injection</h3>
+	            <button>Download</button>
+	            <b>How to run?</b>
+	        </div>
+	    </div>
+	    <div class="card" id="xss" onclick="view('xss')">
+	    	<div class="thumbnail">
+	    		<img src="xss.png">
+	    		<b>Cross Site Scripting</b>
+	    	</div>
+	        <div class="content">
+	            <h3>Cross Site Scripting</h3>
+	            <button>Download</button>
+	            <p>How to run?</p>
+	        </div>
+	    </div>
+	</main>
+	<footer>
+		<div class="issue">
+			<b>Report Issue</b>
+			<span>
+				<textarea id="issue" name="issue"></textarea>
+				<button onclick="">Submit</button>
+			</span>
+		</div>
+		<div>
+			<b>About me</b>
+			<span>
+				Pankaj Barman<br>
+				B.Tech, majoring in CSE <br>
+				Jalpaiguri Government Engineering College <br>
+				Jalpaiguri, West Bengal
+			</span>
+		</div>
+		<div>
+			<b>Contact me</b>
+			<span>
+				<a href="">LinkedIn: Pankaj Barman</a><br>
+				<a href="">github: Pankaj0038</a><br>
+				<a href="mailto:pankajbarman269@gmail.com">Gmail: pankajbarman269</a>
+			</span>
+		</div>
+	</footer>
+
+
+</body>
+</html>
