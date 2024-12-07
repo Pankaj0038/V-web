@@ -1,0 +1,94 @@
+body{
+	display: grid;
+	height: 98vh;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 22% 70% 8%;
+	background-color: black;
+	color: white;
+	font-family: 'Courier New', monospace;
+}
+nav{
+	grid-column: 1 / span 3;
+	display: flex;
+	justify-content: space-around;
+	height: 4rem;
+	align-items: center;
+	
+}
+
+nav a{
+	text-decoration-line: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+nav h1{
+	font-size: 2.5rem;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1.5rem;
+	grid-column: 1 / span 3;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	grid-column: 2;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.container{
+	border: 1px solid grey;
+	height: 40vh;
+	width: 40vh;
+	display: grid;
+	grid-template-rows: 30% 70%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 2rem;
+}
+.container p{
+	font-size: 2rem;
+}
+
+form input{
+	height: 2rem;
+	width: 15rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 2px;
+	border-radius: 1rem;
+	font-size: 1.5rem;
+}
+
+form button{
+	height: 2rem;
+	width: 5rem;
+	background-color: yellow;
+}
+
+form button:hover{
+	background-color: green;
+	color: white;
+}
+form label{
+	font-size: 1.2rem;
+}
+main p{
+	font-size: 1rem;
+}

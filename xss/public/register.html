@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Z3r0_L0g0n</title>
+	<link rel="stylesheet" type="text/css" href="./css/register.css">
+	<script src="name.js"></script>
+</head>
+<body>
+	<nav>
+		<a href="/"><h1>ZL</h1></a>
+		<a href="/about">about</a>
+		<a href="/members">members</a>
+		<a id="lg" href="/login">login</a>
+	</nav>
+	<main>
+		<div class="container">
+			<p>Register</p>
+			<form action="/register" method="POST">
+				<label for="email">Email</label>
+				<input type="text" name="email" placeholder="email">
+				<label for="username">Username</label>
+				<input type="text" name="username" placeholder="username">
+				<label for="password">Password</label>
+				<input type="password" name="password" placeholder="password">
+				<button type="submit">submit</button>
+			</form>
+		</div>
+		<p>Already have an account? <a href="/login">Sign up</a>
+	</main>
+	<footer>Made by @Gumn4m1</footer>
+	<script type="text/javascript">
+			function b64_to_utf8( str ) {
+    			return decodeURIComponent(escape(window.atob( str )));
+			}
+			function getSpecificCookie(cookieName,valueOnly) {
+			    var oCookieArray = document.cookie.split(';'),
+			        fc,
+			        cnRE = new RegExp(cookieName + '\=');
+			    //Loop through cookies
+			    for (var c = 0; c < oCookieArray.length; c++) {
+
+			        //If found save to variable and end loop
+			        if (cnRE.test(oCookieArray[c])) {
+			            fc = oCookieArray[c].trim();
+			            if (valueOnly) {
+			                fc = fc.replace(cookieName +'=', '');
+			            }
+			            break;
+			        }
+
+			    }
+			    return fc;
+			}
+			const userLink = document.getElementById('lg');
+			let val = getSpecificCookie("user",true);
+			let data = b64_to_utf8(val)
+			let jdata = JSON.parse(data);
+			let uname = jdata.username
+			let id = jdata._id
+			if(val){
+				userLink.textContent = `${uname}`;
+				userLink.href = `/user/${id}`;
+			}
+		</script>
+</body>
+</html>
