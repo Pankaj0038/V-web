@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forge me</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Random Bank of India</h1>
+	<p>User ID: <b>{{data.uid}}</b></p>
+	<p>Balance: {{data.balance}}</p>
+	<fieldset>
+		<legend><b>Send Money</b></legend>
+		<label for="uid">Reciever Id</label>
+		<input type="text" name="uid" id="uid">
+		<label for="amount">Amount</label>
+		<input type="number" name="amount" id="amount">
+		<button onclick="send()" id="button">Send</button>
+	</fieldset>
+
+<script type="text/javascript">
+    function send() {
+        const recver = document.getElementById("uid").value;
+        const amount = document.getElementById('amount').value;
+
+        if (!recver) {
+            alert('Please enter a receiver UID');
+            return;
+        }
+        if (isNaN(amount) || amount <= 0) {
+            alert('Please enter a valid amount');
+            return;
+        }
+
+        const url = `/send?uid=${recver}&amount=${amount}`;
+        const data = { uid: recver, amount: parseFloat(amount) };
+
+        fetch(url, {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => {
+            console.log(response);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            if (data.message === "Success") {
+                alert('Transaction successful');
+                window.location.href = '/';
+            } else {
+                alert('Transaction failed: ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+            alert('An error occurred: ' + error.message);
+        })
+        .finally(() => {
+            // Clear the input fields
+            document.getElementById("uid").value = '';
+            document.getElementById('amount').value = '';
+        });
+    }
+</script>
+
+</body>
+</html>
