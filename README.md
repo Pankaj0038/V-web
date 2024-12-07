@@ -9,6 +9,7 @@ V-web is collection of vulnerable web applications. In this collection I'm addin
 - NoSQL Injection
 - Insecure 2FA
 - XSS (Cross Site Scripting)
+- File Upload Vulnerability
 
 ## Tech stacks
 As I made the project with this technologies, so you have to install this tech stacks before executing the server
@@ -32,21 +33,11 @@ As I made the project with this technologies, so you have to install this tech s
    ```bash
    cd V-web
    ```
-3. Now get into the directory which you want to execute
+3. Install dependencies
    ```bash
-   #in case of IDOR in API
-   cd IDOR2
+   npm i
    ```
-4. Then configure the directory with node package manager
+7. Lastly to run all the websites
    ```bash
-   npm init -y
-   ```
-5. And now as I shared the package.json file so install the requirements
-   ```bash
-   npm i express
-   ```
-6. Lastly run the code
-   ```bash
-   npm run dev
-   #I have added the script in package.json file "dev": nodemon src/app.js , that is why it will work
+   npm run all
    ```
