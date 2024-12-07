@@ -1,0 +1,41 @@
+{
+  "name": "V-web",
+  "version": "1.0.0",
+  "description": "Collection of vulnerable websites",
+  "main": "index.js",
+  "scripts": {
+    "2fa": "nodemon 2fa/src/index.js",
+    "idor1": "nodemon IDOR1/src/index.js",
+    "idor2": "nodemon IDOR2/src/index.js",
+    "csrf": "nodemon csrf/src/index.js",
+    "nosqli": "nodemon noSQLi/src/index.js",
+    "xss": "nodemon xss/src/index.js",
+    "fileup": "nodemon zip-slip/src/index.js",
+    "all": "concurrently \"nodemon 2fa/src/index.js\" \"nodemon IDOR1/src/index.js\" \"nodemon IDOR2/src/index.js\" \"nodemon csrf/src/index.js\" \"nodemon noSQLi/src/index.js\" \"nodemon xss/src/index.js\" \"nodemon zip-slip/src/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pankaj0038/V-web.git"
+  },
+  "author": "gumn4m1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pankaj0038/V-web/issues"
+  },
+  "homepage": "https://github.com/Pankaj0038/V-web#readme",
+  "workspaces": [
+    "2fa",
+    "IDOR1",
+    "IDOR2",
+    "csrf",
+    "noSQLi",
+    "xss",
+    "zip-slip"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
