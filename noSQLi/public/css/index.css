@@ -1,0 +1,39 @@
+body{
+	display: grid;
+	min-height: 98vh;
+	grid-template-rows: auto 1fr auto;
+	background-color: #111;
+	color: white;
+}
+nav{
+	display: flex;
+}
+#server{
+	width: 6rem;
+	height: 6rem;
+}
+
+.navbar{
+	display: flex;
+	justify-content: right;
+	padding-right: 4rem;
+	align-items: center;
+	background-image: linear-gradient(to left,#222,#111);
+	width: 100%;
+}
+
+.navbar a{
+		color: white;
+		font-size: 2rem;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+}

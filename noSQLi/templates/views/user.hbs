@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Root User</title>
+    <link rel="stylesheet" href="../../css/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav>
+		<a href="/"><img id="server" src="../../img/server.png"></a>
+		<div class="navbar">
+			<a href="/"><i class="fa fa-sign-out"></i></a>
+		</div>
+	</nav>
+	<main>
+		<div class="bg"></div>
+		<div class="prof">
+			<img src="../../img/admin.png">
+		</div>
+		<div class="dat1">
+			{{data.username}}<br>
+			{{data.description}}<br>
+			{{data.contact}}
+		</div>
+		<div class="dat2">
+			<h3>Root Server Private limited</h3>
+			Danguajhar,Jalpaiguri<br>
+			West Bengal-735102
+		</div>
+		<div class="dat3">
+			uname: {{data.username}}<br>
+			position: {{data.description}}<br>
+			email: {{data.contact}}<br>
+			pass: {{data.password}}<br>
+			uid: {{data.uid}}<br>
+			obj_id: {{data._id}}
+		</div>
+		<div class="dat4">
+			<p>Root server is a vulnerable web application made using Node JS, Express JS, MongoDB for backend and HTML and css for frontend.This web application contains noSQL injection vulnerability. Where the user can inject payload in the database query parameter to manipulate functionality of the application. This is a basic example of authentication vulnerability</p>
+			Application: Root Server <br>
+			Vulnerability: NoSQLi<br>
+			Type: Authentication <br>
+			Severity: Critical <br>
+			Flag: {{data.password}}
+		</div>
+		<div class="dat5">
+			<div>
+				<h4>Contact us</h4>
+				admin@gmail.com<br>
+				+91 9876543210
+			</div>
+			<div>
+				<h4>Address</h4>
+				Danguajhar,Jalpaiguri<br>
+				West Bengal-735102
+			</div>
+			<div>
+				<h4>Products</h4>
+				product no 1234<br>
+				product no 1156
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>made by @Gumnami_artist</p>
+	</footer>
+</body>
+</html>

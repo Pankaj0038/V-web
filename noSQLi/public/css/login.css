@@ -1,0 +1,80 @@
+body{
+	display: grid;
+	min-height: 98vh;
+	grid-template-rows: auto 1fr auto;
+	background-color: #111;
+	color: white;
+}
+nav{
+	display: flex;
+}
+#server{
+	width: 6rem;
+	height: 6rem;
+}
+
+.navbar{
+	display: flex;
+	justify-content: right;
+	padding-right: 4rem;
+	align-items: center;
+	background-image: linear-gradient(to left,#222,#111);
+	width: 100%;
+}
+.navbar a{
+	color: white;
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid white;
+	height: 30rem;
+	width: 30rem;
+	border-radius: 2rem;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form input{
+	margin: 1rem;
+	width: 17rem;
+	height: 3rem;
+	font-size: 1.3rem;
+	border-radius: 2rem;
+	text-align: center;
+}
+
+form button{
+	margin: 1rem;
+	height: 2rem;
+	width: 7rem;
+	border-radius: 8px;
+	background-color: grey;
+	color: white;
+}
+
+form button:hover{
+	background-color: green;
+}
